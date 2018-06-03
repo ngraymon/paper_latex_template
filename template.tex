@@ -1,0 +1,107 @@
+\documentclass[aip,jcp,amsmath,amssymb,floatfix,letterpaper,groupedaddress,
+% preprint,  % single column, double spaced
+reprint,  % two columns
+]{revtex4-1}
+% ------------------------------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}         %
+\usepackage[acronym,nomain,xindy]{glossaries} % provides \gls command
+% ------------------------------------------------------------------------------------------------------------
+\usepackage{graphicx}               % manages images
+% ------------------------------------------------------------------------------------------------------------
+\usepackage{enumitem}               % change the item type of enumerate environmentst
+\usepackage{nicefrac}               % slanted fractions
+\usepackage{physics}                % provides \bra \ket \dd \pdv commands and more
+\usepackage{siunitx}                % provides scientific unit fonts
+\usepackage{dsfont}                 % provides \mathds{}
+\usepackage{bm}                     % bolding for all args \bm{} command
+% ------------------------------------------------------------------------------------------------------------
+\usepackage{hyperref}       % hyperlinks
+% ------------------------------------------------------------------------------------------------------------
+% document specific macros are defined in paper.rty
+% ------------------------------------------------------------------------------------------------------------
+% glossary definitions are defined in template_glossary_list.tex
+% depending on the paper they may need to be listed directly inside template.tex
+% ------------------------------------------------------------------------------------------------------------
+\usepackage{lipsum}  % just to provide filler text for template spacing
+\usepackage{mwe}  % just to provide filler images
+% ------------------------------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+\title{Title of article}
+
+\author{First Last}
+% \email{firstlast@email.ca}  % use this if individual emails for each author
+\author{First Last}
+% \email{firstlast@email.ca}
+\author{First Last}
+% \email{firstlast@email.ca}
+\affiliation{Department, Institution, City, Province, Country, Postal Code}
+% \email{x@email.ca}  % use this if one email for all authors
+\date{\today}
+
+% ------------------------------------------------------------------------------------------------------------
+\begin{abstract}
+  \lipsum[3]
+\end{abstract}
+% ------------------------------------------------------------------------------------------------------------
+
+\keywords{}
+
+\maketitle
+
+% ------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
+\section{\label{sec:Introduction}Introduction}
+% ------------------------------------------------------------------------------------------------------------
+\lipsum[41-46]
+% ------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
+\section{\label{sec:Two}Two}
+% ------------------------------------------------------------------------------------------------------------
+\lipsum[47-52]
+% ------------------------------------------------------------------------------------------------------------
+\subsection{\label{sec:Two_One}One}
+% ------------------------------------------------------------------------------------------------------------
+\lipsum[53-60]
+% ------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
+\section{\label{sec:Three}Three}
+% ------------------------------------------------------------------------------------------------------------
+\lipsum[60-67]
+% ------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
+\section{\label{sec:Results}Results}
+% ------------------------------------------------------------------------------------------------------------
+\begin{figure}[!ht]
+    % \includegraphics[height=0.8\textheight]{fig1.eps}  % use eps format if possible
+    \includegraphics[width=0.8\columnwidth]{example-image}
+    \caption{words}
+    \label{fig:one}
+\end{figure}
+
+\lipsum[70-76]
+
+\begin{figure*}
+% \begin{figure*}[p]  % [p] option forces the image onto its own page
+    % \includegraphics[height=0.78\textheight]{fig2.eps}  % use eps format if possible
+    \includegraphics[width=1.0\linewidth]{example-image}
+    \caption{words}
+    \label{fig:two}
+\end{figure*}
+% ------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
+\section{\label{sec:ConcludingRemarks}Concluding Remarks}
+% ------------------------------------------------------------------------------------------------------------
+\lipsum[80-86]
+% ------------------------------------------------------------------------------------------------------------
+\section*{Acknowledgments}
+% ------------------------------------------------------------------------------------------------------------
+This research has been supported by ...
+% ------------------------------------------------------------------------------------------------------------
+\bibliographystyle{jcp}  % use the appropriate journal bib style here
+\bibliography{template.bib}
+% ------------------------------------------------------------------------------------------------------------
+\end{document}
